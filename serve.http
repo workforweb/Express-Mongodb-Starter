@@ -1,0 +1,28 @@
+### List all Users
+GET http://localhost:5000/users HTTP/1.1
+
+### Add new User
+POST http://localhost:5000/users HTTP/1.1
+content-type: application/json
+
+{
+    "firstname": "John2",
+    "lastname": "Doe",
+    "email": "john2@test.com"
+}
+
+### Search a single User
+GET http://localhost:5000/users/61b707d93dfd4ae86be9c1f8 HTTP/1.1
+
+### Update an User
+PUT http://localhost:5000/users/61b707d93dfd4ae86be9c1f8 HTTP/1.1
+content-type: application/json
+
+{
+    "firstname": "Jonathan"   
+}
+
+### Delete an User
+DELETE http://localhost:5000/users/61b707d93dfd4ae86be9c1f8 HTTP/1.1
+content-type: application/json
+
